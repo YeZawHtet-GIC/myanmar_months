@@ -5,3 +5,27 @@
 .month-item p {
   margin-top: 5px;
 }
+
+.bg-change:hover {
+  background-color: black;
+  color: gold !important;
+  background-image: none !important;
+  transform: scale(1.1);
+}
+
+.bg-change {
+  transition: all 0.3s ease-in-out !important;
+}
+
+/* carousel custom design */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: black;
+  border-radius: 50%;
+  padding: 30px !important;
+}
+
+@media (max-width:768px) {
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    padding: 15px !important;
+  }
+}

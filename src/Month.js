@@ -1,5 +1,6 @@
 import MonthList from "./MonthList";
 import useFetch from "./useFetch";
+import ReactLoading from 'react-loading';
 
 function Month() {
   const {
@@ -11,7 +12,7 @@ function Month() {
     <>
       {error && <div>{error}</div>}
       {isPending && (
-        <div className="text-warning text-center fs-1">Loading...</div>
+        <div className="text-warning bg-dark text-center fs-1" style={{ display:"flex", justifyContent:"center", alignItems:"center", minHeight:"100vh" }}><ReactLoading type="cylon" color="blue" height={100} width={100} /></div>
       )}
       {months && <MonthList months={months} />}
     </>

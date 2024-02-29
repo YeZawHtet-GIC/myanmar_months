@@ -11,6 +11,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Home";
 import NotFound from "./NotFound";
 import Month from "./Month";
+import MonthDetails from "./MonthDetails";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -21,12 +22,12 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
-        path: "/month",
+        path: "/months",
         element: <Month />
       },
       {
         path: "/months/:id",
-        element: <Home />,
+        element: <MonthDetails />,
       },
       {
         path: "*",

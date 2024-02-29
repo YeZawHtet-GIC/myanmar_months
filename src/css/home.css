@@ -1,0 +1,27 @@
+/* Define CSS keyframes for scaling animation */
+  .animated-image {
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    transition: transform 0.3s ease-in-out;
+  }
+ 
+  /* auto shake animate */
+ 
+  .animated-heartbeat {
+    animation: heartbeat 3s infinite;
+  }
+  
+  @keyframes heartbeat {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.02);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  
+  
