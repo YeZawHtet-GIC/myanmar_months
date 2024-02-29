@@ -21,7 +21,7 @@
 .carousel-control-prev-icon, .carousel-control-next-icon {
   background-color: black;
   border-radius: 50%;
-  padding: 30px !important;
+  padding: 24px !important;
 }
 
 .carousel-indicators {
