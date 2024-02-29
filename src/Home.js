@@ -19,8 +19,8 @@ export default function Home() {
   const navigate = useNavigate();
   return (
     <div
-      className="container-fluid bg-dark text-warning"
-     
+      className="container-fluid"
+      style={{ backgroundColor: "#183D3D", color: "#040D12" }}
     >
       <div className="container py-5">
         <div className="row row-cols-2">
@@ -50,6 +50,7 @@ export default function Home() {
             <button
               className="my-4 py-2 px-4 fw-bold btn btn-outline-warning"
               onClick={() => navigate("/months")}
+              style={{ color: "#040D12" }}
             >
               Learn More About မြန်မာလ{" "}
             </button>

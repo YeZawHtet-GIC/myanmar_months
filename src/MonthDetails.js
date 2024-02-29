@@ -17,15 +17,23 @@ export default function MonthDetails() {
   return (
     <div className="container my-3">
       <div className="row justify-content-center">
-        <div className="col-md-12 bg-dark text-warning p-4 rounded shadow">
+        <div
+          className="col-md-12 p-4 rounded shadow"
+          style={{
+            backgroundColor: "#183D3D",
+            color: "#93B1A6",
+          }}
+        >
           {isPending && (
             <div
-              className="text-warning bg-dark text-center fs-1"
+              className="text-center fs-1"
               style={{
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
                 minHeight: "100vh",
+                backgroundColor: "#183D3D",
+                color: "#93B1A6",
               }}
             >
               <ReactLoading type="cylon" color="blue" height={50} width={100} />
@@ -33,17 +41,17 @@ export default function MonthDetails() {
           )}
           {error && <div>{error}</div>}
           {month && (
-            <div>
-              <h2 className="text-center text-warning py-2">
+            <div style={{ color:"#040D12" }}>
+              <h2 className="text-center fw-bold py-2">
                 {month.MonthMm} ({month.FestivalMm})
               </h2>
-              <h4 className="text-center text-warning">
+              <h4 className="text-center fw-bold">
                 {month.MonthEn} ({month.FestivalEn})
               </h4>
               <div className="text-center my-4">
                 <button
                   onClick={() => navigate("/months")}
-                  className="btn btn-outline-primary px-5 fw-bold"
+                  className="btn btn-outline-warning px-5 fw-bold color-040D12"
                 >
                   Back
                 </button>
@@ -71,7 +79,7 @@ export default function MonthDetails() {
               <hr className="bg-light" />
               <div className="row">
                 <div className="col-md-12">
-                  <h2 className="text-center py-3 text-warning">
+                  <h2 className="text-center py-3 color-040D12">
                     {month.MonthMm}လ အကြောင်း
                   </h2>
                   <p className="p-2 first-letter">{month.Detail}</p>

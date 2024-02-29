@@ -12,6 +12,7 @@ import Home from "./Home";
 import NotFound from "./NotFound";
 import Month from "./Month";
 import MonthDetails from "./MonthDetails";
+import "bootstrap-icons/font/bootstrap-icons.css";
 const router = createBrowserRouter([
   {
     path: "/",

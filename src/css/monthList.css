@@ -24,6 +24,10 @@
   padding: 30px !important;
 }
 
+.carousel-indicators {
+  bottom: -24px !important;
+}
+
 @media (max-width:768px) {
   .carousel-control-prev-icon, .carousel-control-next-icon {
     padding: 15px !important;
