@@ -17,7 +17,7 @@ export default function MonthDetails() {
   return (
     <div className="container my-3">
       <div className="row justify-content-center">
-        <div className="col-md-12 bg-black text-warning-emphasis p-4 rounded shadow">
+        <div className="col-md-12 bg-dark text-light p-4 rounded shadow">
           {isPending && (
             <div
               className="text-warning bg-dark text-center fs-1"
