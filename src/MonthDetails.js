@@ -17,31 +17,15 @@ export default function MonthDetails() {
   return (
     <div className="container my-3">
       <div className="row justify-content-center">
-        <div
-          className="col-md-12 p-4 rounded shadow"
-          style={{
-            backgroundColor: "#183D3D",
-            color: "#93B1A6",
-          }}
-        >
+        <div className="col-md-12 p-4 rounded shadow bg-color1">
           {isPending && (
-            <div
-              className="text-center fs-1"
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                minHeight: "100vh",
-                backgroundColor: "#183D3D",
-                color: "#93B1A6",
-              }}
-            >
+            <div className="text-center fs-1 pending-style">
               <ReactLoading type="cylon" color="blue" height={50} width={100} />
             </div>
           )}
           {error && <div>{error}</div>}
           {month && (
-            <div style={{ color:"#040D12" }}>
+            <div className="color-040D12">
               <h2 className="text-center fw-bold py-2">
                 {month.MonthMm} ({month.FestivalMm})
               </h2>
@@ -67,8 +51,7 @@ export default function MonthDetails() {
                       ".jpg"
                     }
                     alt={month.MonthEn}
-                    className="img-fluid rounded"
-                    style={{ objectFit: "contain", height: "100%" }}
+                    className="img-fluid rounded img-fix2"
                   />
                 </div>
 

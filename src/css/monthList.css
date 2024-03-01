@@ -33,3 +33,10 @@
     padding: 15px !important;
   }
 }
+
+.container-fix{
+  min-height: 100vh;
+  max-width: 100vw;
+  background-color:#183D3D ;
+  color: #040D12;
+}

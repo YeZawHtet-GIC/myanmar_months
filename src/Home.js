@@ -18,10 +18,7 @@ const monthImages = [
 export default function Home() {
   const navigate = useNavigate();
   return (
-    <div
-      className="container-fluid"
-      style={{ backgroundColor: "#183D3D", color: "#040D12" }}
-    >
+    <div className="container-fluid bg-color1">
       <div className="container py-5">
         <div className="row row-cols-2">
           {/* Render month images with mapped array */}
@@ -30,8 +27,7 @@ export default function Home() {
               <img
                 src={image}
                 alt=""
-                className="img-fluid mb-3 w-100 animated-image"
-                style={{ objectFit: "cover", height: "90%" }}
+                className="img-fluid mb-3 w-100 animated-image img-fix"
               />
             </div>
           ))}
@@ -41,16 +37,14 @@ export default function Home() {
             <img
               src={monthImages[5]}
               alt=""
-              className="img-fluid mb-3 w-100 animated-image"
-              style={{ objectFit: "cover", height: "90%" }}
+              className="img-fluid mb-3 w-100 animated-image img-fix"
             />
           </div>
           <div className="col-md-6 col text-center">
             <h1>မြန်မာလများ</h1>
             <button
-              className="my-4 py-2 px-4 fw-bold btn btn-outline-warning"
+              className="my-4 py-2 px-4 fw-bold btn btn-outline-warning color-1"
               onClick={() => navigate("/months")}
-              style={{ color: "#040D12" }}
             >
               Learn More About မြန်မာလ{" "}
             </button>
@@ -59,8 +53,7 @@ export default function Home() {
             <img
               src={monthImages[9]}
               alt=""
-              className="img-fluid mb-3 w-100 animated-image"
-              style={{ objectFit: "cover", height: "90%" }}
+              className="img-fluid mb-3 w-100 animated-image img-fix"
             />
           </div>
         </div>
@@ -71,8 +64,7 @@ export default function Home() {
               <img
                 src={image}
                 alt=""
-                className="img-fluid mb-3 w-100 animated-image"
-                style={{ objectFit: "cover", height: "90%" }}
+                className="img-fluid mb-3 w-100 animated-image img-fix"
               />
             </div>
           ))}

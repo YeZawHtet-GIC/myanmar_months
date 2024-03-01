@@ -1,8 +1,18 @@
 .first-letter::first-letter {
-    margin-left: 5rem;
-    font-size: 30px;
- }
+   margin-left: 5rem;
+   font-size: 30px;
+}
 
- .color-040D12{
-    color: #040D12;
- }
+.color-040D12 {
+   color: #040D12;
+}
+
+.bg-color1 {
+   background-color: #183D3D;
+   color: #93B1A6;
+}
+
+.img-fix2{
+   object-fit: contain;
+   height: 100%;  
+}

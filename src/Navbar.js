@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <nav
       className="navbar navbar-expand-lg navbar-dark"
-      style={{ background: "#3f87a6" }}
+      style={{ background: "#93B1A6" }}
     >
       <div className="container">
         <Link className="navbar-brand" to="/">

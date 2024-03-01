@@ -13,16 +13,10 @@ export default function MonthList({ months }) {
   let i = 0;
   return (
     <div
-      className="container-fluid"
-      style={{
-        minHeight: "100vh",
-        maxWidth: "100vw",
-        backgroundColor: "#183D3D",
-        color: "#040D12",
-      }}
+      className="container-fluid container-fix"
     >
       <div className="text-center py-5" >
-        <h1 style={{ color:"#040D12", fontWeight:"bolder" }}>မြန်မာလ နှင့် ပွဲတော်များ</h1>
+        <h1 className="color-040D12 fw-bolder">မြန်မာလ နှင့် ပွဲတော်များ</h1>
       </div>
       <div className="row">
         <div className="col-md-12" >

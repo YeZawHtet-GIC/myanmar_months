@@ -1,27 +1,48 @@
 /* Define CSS keyframes for scaling animation */
-  .animated-image {
-    border-top-left-radius: 30%;
-    border-bottom-right-radius: 30%;
-    transition: transform 0.3s ease-in-out;
+.animated-image {
+  border-top-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* auto shake animate */
+
+.animated-heartbeat {
+  animation: heartbeat 3s infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
   }
- 
-  /* auto shake animate */
- 
-  .animated-heartbeat {
-    animation: heartbeat 3s infinite;
+
+  50% {
+    transform: scale(1.02);
   }
-  
-  @keyframes heartbeat {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.02);
-    }
-    100% {
-      transform: scale(1);
-    }
+
+  100% {
+    transform: scale(1);
   }
-  
-  
-  
+}
+
+
+.bg-color1 {
+  background-color: #183D3D;
+  color: #040D12;
+}
+
+.img-fix {
+  object-fit: cover;
+  height: 90%;
+}
+
+.color-1{
+  color: #040D12;
+}
+
+.pending-style{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
