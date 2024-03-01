@@ -27,7 +27,7 @@ export default function Home() {
               <img
                 src={image}
                 alt=""
-                className="img-fluid mb-3 w-100 animated-image img-fix"
+                className="img-fluid img-thumbnail mb-3 w-100 animated-image img-fix"
               />
             </div>
           ))}
@@ -37,7 +37,7 @@ export default function Home() {
             <img
               src={monthImages[5]}
               alt=""
-              className="img-fluid mb-3 w-100 animated-image img-fix"
+              className="img-fluid img-thumbnail mb-3 w-100 animated-image img-fix"
             />
           </div>
           <div className="col-md-6 col text-center">
@@ -53,7 +53,7 @@ export default function Home() {
             <img
               src={monthImages[9]}
               alt=""
-              className="img-fluid mb-3 w-100 animated-image img-fix"
+              className="img-fluid img-thumbnail mb-3 w-100 animated-image img-fix"
             />
           </div>
         </div>
@@ -64,7 +64,7 @@ export default function Home() {
               <img
                 src={image}
                 alt=""
-                className="img-fluid mb-3 w-100 animated-image img-fix"
+                className="img-fluid mb-3 w-100 animated-image img-thumbnail img-fix"
               />
             </div>
           ))}
